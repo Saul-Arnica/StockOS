@@ -1,12 +1,21 @@
-namespace StockOS.UI.WinForms;
+using System;
+using System.Windows.Forms;
+using StockOS.UI.WinForms.Forms;
 
-internal static class Program
+namespace StockOS.UI.WinForms
 {
-    [STAThread]
-    static void Main()
+    internal static class Program
     {
-        System.Windows.Forms.Application.EnableVisualStyles();
-        System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
-        System.Windows.Forms.Application.Run(new System.Windows.Forms.Form());
+        [STAThread]
+        static void Main()
+        {
+            // Para evitar conflictos con StockOS.Application:
+            System.Windows.Forms.Application.EnableVisualStyles();
+            System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+
+            // Como el proyecto usa .NET 8 con soporte completo de WinForms:
+            ApplicationConfiguration.Initialize();
+            
+        }
     }
 }

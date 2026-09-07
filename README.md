@@ -38,13 +38,13 @@ StockOS/
 │   │   ├── 📁 Services/                    # VentaService, StockService, CajaService, etc.
 │   │   ├── 📁 DTOs/                        # Objetos de transferencia de datos para la UI
 │   │   ├── 📁 Validators/                  # Validaciones de reglas de negocio
+│   │   ├── 📁 Reports/                     # Exportación de reportes (PDF, Excel, Doc) -Va en aplicacion.  
 │   │   └── 📁 Observers/                   # Implementaciones concretas de observadores
 │   │
-│   ├── 📦 StockOS.Infrastructure/          # Acceso a datos y servicios externos
+│   ├── 📦 StockOS.DataAccess/          # Acceso a datos y servicios externos
 │   │   ├── 📁 Persistence/                 # Contexto de base de datos (SQL Server), mapeos y migraciones
 │   │   ├── 📁 Repositories/                # Implementaciones de repositorios (CRUD y consultas)
 │   │   ├── 📁 Hardware/                    # Comunicación con lector HID y tickets ESC/POS
-│   │   ├── 📁 Reports/                     # Exportación de reportes (PDF, Excel, Doc)
 │   │   └── 📁 Security/                    # Cifrado de contraseñas y respaldos (Backup/Restore)
 │   │
 │   └── 📦 StockOS.UI.WinForms/             # Capa de Presentación (Interfaz gráfica)
