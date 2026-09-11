@@ -9,6 +9,11 @@ namespace StockOS.UI.WinForms.Forms
         {
             InitializeComponent();
         }
+
+        private void lblCodigo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
