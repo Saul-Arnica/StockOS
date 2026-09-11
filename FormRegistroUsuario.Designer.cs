@@ -1,4 +1,4 @@
-namespace StockOS.UI.WinForms.Forms
+namespace Vistas_Usuarios
 {
     partial class FormRegistroUsuario
     {
